@@ -4,8 +4,9 @@ const render = ({ users, userList, curr }) => {
     .map(
       (user, idx) =>
         `
-    <li>
+    <li><div id="details">
       <a href ='#${idx}'> ${user.name}</a>
+      <div>
     ${
       curr === idx
         ? `
